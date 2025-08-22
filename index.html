@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Camp RevoU    
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+    <h1>To-Do List</h1>
+
+    <form id="todo-form" novalidate>
+      <div class="field">
+        <label for="todo-input">Task</label>
+        <input id="todo-input" type="text" placeholder="Submit assignment" required />
+      </div>
+
+      <div class="field">
+        <label for="date-input">Due date</label>
+        <input id="date-input" type="date" required />
+      </div>
+
+      <button type="submit" class="btn">Add</button>
+      <p id="form-error" class="error" aria-live="polite"></p>
+    </form>
+
+    <section class="toolbar">
+      <input id="filter-input" type="text" placeholder="Filter tasks..." />
+    </section>
+
+    <ul id="todo-list" class="list" aria-live="polite"></ul>
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
